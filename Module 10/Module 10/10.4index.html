@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-4 Transform Element Using Rotate Scale Translate</title>
+    <style>
+        .container .inner{
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+        }
+        .container{
+            border: 2px solid rebeccapurple;
+            background-color: aqua ;
+        }
+        .inner{
+            border: 2px solid rgb(18, 2, 34);
+            background-color:rgb(118, 109, 11) ;
+            /* transform: scale(.75, .5);
+            transform: translate(0.5) rotate(-45deg) translate(-150) ; */
+        }
+        .inner:hover{
+            transform: translate(-150px) scale(0.5) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<h1> some</h1>
+    <div class="container"> container 1
+        <div class="inner">inner 1</div>
+</div>
+<div class="container"> container 2
+    <div class="inner">inner 2</div>
+</div>
+<div class="container"> container 3
+    <div class="inner">inner 3</div>
+</div>
+</body>
+</html>

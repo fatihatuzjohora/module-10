@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-6 (Optional) Cricket Match Animation Transform, Translate, Transition</title>
+    <style>
+        @keyframes ping-pong{
+            form{
+                left: 0;
+            }
+            to{
+                left: 800px;
+                background-color: red;
+            }
+        }
+        @keyframes bounce {
+            0%{top: 0px;
+                left: 0px;
+top: 0;
+left: 0;
+            }
+            25%{
+              left: 150px; 
+              top: 200px; 
+              background-color: red;
+            }
+            50%{
+               left: 300px;
+               top: 0px; 
+               background-color: yellow;
+            }
+            100%{
+                left: 500px;
+                top: 200px;
+                background-color: red;
+            }
+        }
+        .stage{
+            width: 900px;
+            height: 300px;
+            border: 2px solid saddlebrown;
+            background-color: aqua;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            animation: bounce 3s ease-in-out 1s infinite alternate;  
+             /* animation: ping-pong 2s ease-in-out 1s infinite alternate;   */
+             /* (ping-pong=name) 
+             (2s= duration)
+              ( ease-in-out=timing function)
+               (1s= delay)
+               (3=iteration-count) (alternate= direction) (fill-mode) */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploe Animation</h1>
+    <div class="stage">
+<div class="ball"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      css3 ,, 10-3 CSS3 Features And CSS Overflow, Text-Overflow, Ellipsis
+    </title>
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid red;
+        overflow: auto;
+      }
+
+      #box1 {
+        overflow: auto;
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        /* overflow-x: hidden; */
+      }
+
+      .ss {
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        border: 2px solid yellow;
+        /* text-overflow: ellipsis; */
+        text-overflow: clip;
+      }
+    </style>
+  </head>
+  <body>
+    <p
+      title="lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus consectetur quidem ex vitae? Sapiente tempore accusamus dolorum, sed asperiores "
+      class="ss"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+      repellendus consectetur quidem ex vitae? Sapiente tempore accusamus
+      dolorum, sed asperiores repellendus quidem eum non odit illo saepe
+      officia, facere qui! Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Nobis nostrum consequatur voluptatem molestiae omnis voluptate, iste
+      rem aliquid sed totam quibusdam minima aspernatur dignissimos perferendis
+      magnam neque incidunt? Sit voluptates dolorem beatae autem sed possimus,
+      inventore culpa sapiente eaque sunt aliquid. Doloremque vel eius ducimus
+      facilis. Expedita, exercitationem eaque ea corrupti fuga dolores? Fugiat,
+      amet. Nisi nulla consequatur consectetur asperiores quod magni voluptas in
+      maiores, quidem veniam magnam eaque sequi amet nemo tempore expedita quis
+      itaque ratione autem! Obcaecati dignissimos, consectetur eveniet aliquid
+      quisquam, recusandae animi dolores qui fuga possimus nobis distinctio
+      odit, beatae temporibus in iste architecto vitae. Commodi.
+    </p>
+    <h3>10-3 CSS3 Features And CSS Overflow, Text-Overflow, Ellipsis</h3>
+    <div id="box1" class="box">
+      <p>box 1</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum
+      ducimus commodi, consequuntur nobis beatae nam qui nihil accusamus nostrum
+      suscipit facere voluptas eaque dolor consectetur minus assumenda itaque
+      magni accusantium animi, iusto similique maxime unde voluptate. Molestiae
+      quis, ullam enim exercitationem placeat odio alias quidem qui culpa
+      consequuntur cumque? Laudantium rerum sit beatae commodi nulla sunt
+      molestiae dolorum repellat reiciendis quis. Temporibus reiciendis a eum
+      enim, consectetur numquam ut, nobis saepe similique laboriosam ratione
+      porro dicta! Quibusdam illo voluptatum doloribus at explicabo eaque
+      repellat. Sint provident similique itaque eum quo amet odio repudiandae
+      vero, iusto, totam, ex tenetur architecto
+    </div>
+
+    <div class="box">
+      <p>box 2</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum
+      ducimus commodi, consequuntur nobis beatae nam qui nihil accusamus nostrum
+      suscipit facere voluptas eaque dolor consectetur minus assumenda itaque
+      magni accusantium animi, iusto similique maxime unde voluptate. Molestiae
+      quis, ullam enim exercitationem placeat odio alias quidem qui culpa
+      consequuntur cumque? Laudantium rerum sit beatae commodi nulla sunt
+      molestiae dolorum repellat reiciendis quis. Temporibus reiciendis a eum
+      enim, consectetur numquam ut, nobis saepe similique laboriosam ratione
+      porro dicta! Quibusdam illo voluptatum doloribus at explicabo eaque
+      repellat. Sint provident similique itaque eum quo amet odio repudiandae
+      vero, iusto, totam, ex tenetur architecto?
+    </div>
+    <div class="box">
+      <p>box 3</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum
+      ducimus commodi, amet odio repudiandae vero, iusto, totam, ex tenetur
+      architecto
+    </div>
+  </body>
+</html>
